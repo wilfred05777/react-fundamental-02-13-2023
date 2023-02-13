@@ -9,7 +9,7 @@ import Books from './Book/Books'
 const BookList = () => {
   return (
     <section>
-      <Book />
+      {/* <Book />*/}
       <Book />
       <Book />
     </section>
@@ -30,7 +30,8 @@ function App() {
   return (
     <div className='App'>
       <BookList />
-      {/* <BookLists /> */}
+      {/* <BookLists Image={Image} Title={Title} Author={Author} />
+      <BookLists Image={Image} Title={Title} Author={Author} /> */}
     </div>
   )
 }
