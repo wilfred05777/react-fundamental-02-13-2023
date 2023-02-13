@@ -1,10 +1,11 @@
 import React from 'react'
+import Book from './Book'
 
-const BookList = () => {
+const BookList = ({ Image, Title, Author }) => {
   return (
-    <div>
-      <h2>Booklist</h2>
-    </div>
+    <section>
+      <Book Image={Image} Title={Title} Author={Author} />
+    </section>
   )
 }
 

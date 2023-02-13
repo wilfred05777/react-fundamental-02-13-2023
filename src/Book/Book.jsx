@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Book = () => {
+const Book = ({ Image, Title, Author }) => {
   return (
     <article>
-      <h2>Books</h2>
+      <Image />
+      <Title />
+      <Author />
     </article>
   )
 }
