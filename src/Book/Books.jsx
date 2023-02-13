@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Book = ({ Image, Title, Author }) => {
+const Books = ({ Image, Title, Author }) => {
   return (
     <article>
       <Image />
@@ -10,4 +10,4 @@ const Book = ({ Image, Title, Author }) => {
   )
 }
 
-export default Book
+export default Books

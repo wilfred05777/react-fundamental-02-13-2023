@@ -1,12 +1,12 @@
 import React from 'react'
-import Book from './Book'
+import Books from './Books'
 
-const BookList = ({ Image, Title, Author }) => {
+const BookLists = ({ Image, Title, Author }) => {
   return (
     <section>
-      <Book Image={Image} Title={Title} Author={Author} />
+      <Books Image={Image} Title={Title} Author={Author} />
     </section>
   )
 }
 
-export default BookList
+export default BookLists

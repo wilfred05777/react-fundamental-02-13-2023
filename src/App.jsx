@@ -3,12 +3,14 @@ import { useState } from 'react'
 
 import './App.css'
 
-// import BookList from './Book/booklists'
-// import Book from './Book/Book'
+import BookLists from './Book/booklists'
+import Books from './Book/Books'
 
 const BookList = () => {
   return (
     <section>
+      <Book />
+      <Book />
       <Book />
     </section>
   )
@@ -27,17 +29,21 @@ const Book = () => {
 function App() {
   return (
     <div className='App'>
-      <Book />
-      {/* <BookList />
-      <Author /> */}
+      <BookList />
+      {/* <BookLists /> */}
     </div>
   )
 }
 
-const Image = () => <h2>Image placeholder</h2>
-const Title = () => <h2>Horry Potter</h2>
+const Image = () => (
+  <img
+    src='https://images-na.ssl-images-amazon.com/images/I/71m+Qtq+HrL._AC_UL900_SR900,600_.jpg'
+    alt='book title'
+  />
+)
+const Title = () => <h2>Interesting Facts of Curious Minds</h2>
 const Author = () => {
-  return <h4>Author: Benjor</h4>
+  return <h4>Jordan Moore</h4>
 }
 
 export default App
