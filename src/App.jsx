@@ -8,8 +8,10 @@ import Books from './Book/Books'
 
 const BookList = () => {
   return (
-    <section>
+    <section className='booklist'>
       {/* <Book />*/}
+      <Book />
+      <Book />
       <Book />
       <Book />
     </section>
@@ -18,7 +20,7 @@ const BookList = () => {
 
 const Book = () => {
   return (
-    <article>
+    <article className='book'>
       <Image />
       <Title />
       <Author />
