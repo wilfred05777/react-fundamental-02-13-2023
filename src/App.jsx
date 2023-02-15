@@ -6,6 +6,8 @@ import './App.css'
 import BookLists from './Book/booklists'
 import Books from './Book/Books'
 
+import ImageSrc from './img/img1.jpg'
+
 const BookList = () => {
   return (
     <section className='booklist'>
@@ -19,11 +21,16 @@ const BookList = () => {
 }
 
 const Book = () => {
+  const title = 'Interesting Facts of Curios Mindsss!'
+  const author = 'Jordan Moore'
   return (
     <article className='book'>
-      <Image />
-      <Title />
-      <Author />
+      <img src={ImageSrc} alt='Interesting Facts For Curios Minds' />
+      <h2>{title}</h2>
+      <h4>{author}</h4>
+      {/* <Image /> */}
+      {/* <Title /> */}
+      {/* <Author /> */}
     </article>
   )
 }
@@ -44,6 +51,7 @@ const Image = () => (
     alt='book title'
   />
 )
+
 const Title = () => <h2>Interesting Facts of Curious Minds</h2>
 const Author = () => {
   const inlineHeadingStyles = {
