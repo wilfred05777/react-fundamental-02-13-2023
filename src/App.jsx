@@ -6,26 +6,33 @@ import './App.css'
 import BookLists from './Book/booklists'
 import Books from './Book/Books'
 
-import ImageSrc from './img/img1.jpg'
+import img from './img/img1.jpg'
+
+const title = 'Interesting Facts of Curios Mindsss!'
+const author = 'Jordan Moore'
+
+// parameter
+const someFunc = (param1, param2) => {
+  console.log(param1, param2)
+}
+
+// arguments
+someFunc('job', 'developer')
 
 const BookList = () => {
   return (
     <section className='booklist'>
-      {/* <Book />*/}
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book job='developer' />
+      <Book title='random title' />
     </section>
   )
 }
 
-const Book = () => {
-  const title = 'Interesting Facts of Curios Mindsss!'
-  const author = 'Jordan Moore'
+const Book = (props) => {
+  console.log(props)
   return (
     <article className='book'>
-      <img src={ImageSrc} alt='Interesting Facts For Curios Minds' />
+      <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
     </article>
@@ -36,8 +43,6 @@ function App() {
   return (
     <div className='App'>
       <BookList />
-      {/* <BookLists Image={Image} Title={Title} Author={Author} />
-      <BookLists Image={Image} Title={Title} Author={Author} /> */}
     </div>
   )
 }
