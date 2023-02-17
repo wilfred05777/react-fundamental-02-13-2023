@@ -28,9 +28,6 @@ const Book = () => {
       <img src={ImageSrc} alt='Interesting Facts For Curios Minds' />
       <h2>{title}</h2>
       <h4>{author}</h4>
-      {/* <Image /> */}
-      {/* <Title /> */}
-      {/* <Author /> */}
     </article>
   )
 }
